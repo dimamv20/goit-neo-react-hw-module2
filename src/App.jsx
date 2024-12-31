@@ -11,7 +11,7 @@ function App() {
     bad: 0,
   });
 
-  // Функція для оновлення фідбеку
+
   const updateFeedback = (feedbackType) => {
     setFeedback((prevFeedback) => ({
       ...prevFeedback,
@@ -19,7 +19,7 @@ function App() {
     }));
   };
 
-  // Функція для скидання відгуків
+
   const resetFeedback = () => {
     setFeedback({
       good: 0,
@@ -28,7 +28,7 @@ function App() {
     });
   };
 
-  // Загальна кількість відгуків
+
   const totalFeedback = feedback.good + feedback.neutral + feedback.bad;
 
   return (

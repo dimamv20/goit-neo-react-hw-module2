@@ -7,7 +7,7 @@ const Feedback = ({ feedback, totalFeedback }) => {
         <p>Neutral: {feedback.neutral}</p>
         <p>Bad: {feedback.bad}</p>
         <p>Total: {totalFeedback}</p>
-        <p>Positive: {Math.round((good / totalFeedback) * 100)}</p>
+        <p>Positive: {Math.round((feedback.good / totalFeedback) * 100)} %</p>
       </div>
     );
   };
